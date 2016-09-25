@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div class="content-wrapper">
+  {% for section in site.sections %}
+
+   <section id="{{ section.anchor }}" class="{% cycle 'odd', 'even' %} section">
+    <div class="section__inner">
+      <h2 class="section__title">{{ section.title }}</h2>
+         {{ section.content }}
+    </div>
+
+   </section>
+  {% endfor %}
+</div>

@@ -1,0 +1,45 @@
+.header {
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+.header__logo {
+  padding: 20px 0;
+  line-height: 1;
+  background: $background;
+  position: relative;
+  z-index: 10;
+
+
+  h1 {
+    font-size: 50px;
+    margin: 0;
+    font-family: $scriptfont;
+  }
+}
+
+.header__slogan {
+  color: $secondary;
+  color: #ee3e76;
+  text-transform: uppercase;
+  letter-spacing: 4.5px;
+  margin: 10px 0 0 7px;
+  //font-weight: 600;
+}
+
+.header__fixed-wrapper {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.header__hero {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background: url(../img/hand-cropped.jpg) no-repeat;
+  background-size: cover;
+}
