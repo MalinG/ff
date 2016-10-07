@@ -14,10 +14,14 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
   <script type="text/javascript" src="//pym.nprapps.org/pym.v1.js"></script>
   <script>
-    jQuery(window).load(function() {
-      console.log('loaded baby');
-      var pymChild = new pym.Child();
+    //jQuery(window).load(function() {
+    //  console.log('loaded baby');
+    //  var pymChild = new pym.Child();
       //pymChild.sendHeight();
-    });
+    //});
+    window.load = function () {
+      console.log('loading');
+      var pymChild = new pym.Child();
+    }
   </script>
 </head>
